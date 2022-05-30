@@ -1,0 +1,19 @@
+var matriz = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+var soma1 = 0;
+for(var j = 0;j < matriz.length; j++){
+  soma1 += matriz[j][0];}
+var prod1 = 1;
+for(var j = 0;j < matriz.length; j++){
+  prod1 *= matriz[0][j];}
+var somaf = 0;
+for(var i = 0;i < matriz.length; i++){
+for (var j = 0;j < matriz.length; j++){
+somaf += matriz[i][j];}
+}
+var prod2 = 1;
+for(var i = 0;i < matriz.length; i++){
+prod2 *= matriz[i][i];}
+console.log("A soma dos elementos da primeira coluna é =",soma1)
+console.log("O produto dos elementos da primeira linha é =",prod1)
+console.log("A soma de todos os elementos é =",somaf)
+console.log("O O produto da diagonal principal é =",prod2)
